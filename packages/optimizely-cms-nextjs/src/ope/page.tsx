@@ -84,6 +84,8 @@ export function createEditPageComponent<LocaleType = string>(
       client,
       factory,
       mode: ctx,
+      params: props.params,
+      searchParams: props.searchParams,
     })
 
     // Get information from the Request URI

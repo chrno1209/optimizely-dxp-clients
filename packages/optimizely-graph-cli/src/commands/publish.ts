@@ -82,7 +82,19 @@ export const publishToVercelModule: CliModule<PublishToVercelProps> = {
         request: {
           url: webhookTarget.href,
           method: verb
-        }
+        },
+        topics: [
+          "*.*"
+        ],
+        filters: [
+          {
+            status: {
+              in: [
+                "Published"
+              ]
+            }
+          }
+        ]
       })
 
       process.stdout.write("\n" + chalk.greenBright(`${chalk.bold(figures.tick)} ${webhookTarget.href} has been added as Webhook recipient to Optimizely Graph`) + "\n")

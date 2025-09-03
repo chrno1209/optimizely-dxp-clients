@@ -2,7 +2,7 @@
   "name": "@eshn/optimizely-cms-cli",
   "description": "Optimizely CMS CLI Tools",
   "type": "module",
-  "version": "5.1.3",
+  "version": "5.1.5",
   "bin": {
     "opti-cms": "./dist/index.js"
   },
@@ -17,7 +17,7 @@
     "opti-cms": "node ./dist/index.js"
   },
   "devDependencies": {
-    "@eshn/optimizely-cms-api": "workspace:5.1.3",
+    "@eshn/optimizely-cms-api": "workspace:5.1.5",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-typescript": "^12.1.4",
     "@types/node": "^22.16.4",
@@ -27,7 +27,7 @@
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "@eshn/optimizely-cms-api": "^5.1.3",
+    "@eshn/optimizely-cms-api": "^5.1.5",
     "@types/node": "*"
   },
   "dependencies": {

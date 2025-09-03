@@ -2,11 +2,11 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 
 > [!TIP]
-> Looking to implement a new Next.js based site with Optimizely SaaS CMS? The easiest way to get started is our [project template]([http](https://github.com/remkoj/optimizely-saas-starter)).
+> Looking to implement a new Next.js based site with Optimizely SaaS CMS? The easiest way to get started is our [project template]([http](https://github.com/chrno1209/optimizely-saas-starter)).
 
 This package provides the needed components to implement a Next.js based frontedn for Optimizely SaaS CMS, with full support for the preview capabilities of Optimizely CMS.
 
-[Release notes](https://github.com/remkoj/optimizely-dxp-clients/releases)
+[Release notes](https://github.com/chrno1209/optimizely-dxp-clients/releases)
 
 ## Features
 ### Catch-all route rendering

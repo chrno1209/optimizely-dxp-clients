@@ -4,7 +4,7 @@ import posix from "node:path/posix"
 import { Readable } from "node:stream"
 import { finished } from "node:stream/promises"
 
-const downloadLink = "https://github.com/remkoj/optimizely-dxp-clients/raw/refs/heads/main/dependencies/graphql-codegen-visitor-plugin-common-v5.7.2-patched.tgz"
+const downloadLink = "https://github.com/chrno1209/optimizely-dxp-clients/raw/refs/heads/main/dependencies/graphql-codegen-visitor-plugin-common-v5.7.2-patched.tgz"
 const downloadFile = "graphql-codegen-visitor-plugin-common-v5.7.2-patched.tgz"
 const downloadPath = "./packages"
 

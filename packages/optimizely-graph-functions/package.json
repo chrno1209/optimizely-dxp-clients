@@ -1,9 +1,9 @@
 {
   "name": "@eshn/optimizely-graph-functions",
-  "repository": "https://github.com/remkoj/optimizely-dxp-clients.git",
+  "repository": "https://github.com/chrno1209/optimizely-dxp-clients.git",
   "author": "Remko Jantzen <693172+remkoj@users.noreply.github.com>",
-  "homepage": "https://github.com/remkoj/optimizely-dxp-clients",
-  "version": "5.1.3",
+  "homepage": "https://github.com/chrno1209/optimizely-dxp-clients",
+  "version": "5.1.5",
   "license": "Apache-2.0",
   "type": "commonjs",
   "description": "GraphQL Codegen preset for Optimizely Graph",
@@ -70,7 +70,7 @@
     "opti-patch": "yarn node dist/patch.js"
   },
   "peerDependencies": {
-    "@eshn/optimizely-graph-client": "^5.1.3",
+    "@eshn/optimizely-graph-client": "^5.1.5",
     "@graphql-typed-document-node/core": "^3",
     "graphql": "^16",
     "graphql-request": "^6",
