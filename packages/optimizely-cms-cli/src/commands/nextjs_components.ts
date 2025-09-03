@@ -169,7 +169,7 @@ import { getSdk } from "@/gql"
 export const ${varName} : CmsComponent<${contentType.key}DataFragment${displayTemplate ? ', ' + displayTemplate : ''}> = ({ data${displayTemplate ? ', layoutProps' : ''}, ctx }) => {
     const composition = getFragmentData(CompositionNodeDataFragmentDoc, getFragmentData(ExperienceDataFragmentDoc, data)?.composition)
     return <CmsEditable as="div" className="mx-auto px-2 container" cmsFieldName="unstructuredData" ctx={ctx}>
-        { composition && isNode(composition) && <OptimizelyComposition node={composition} /> }
+        { composition && isNode(composition) && <OptimizelyComposition node={composition} ctx={ctx} /> }
     </CmsEditable>
 }
 ${varName}.displayName = "${contentType.displayName} (${ucFirst(contentType.baseType)}/${contentType.key})"

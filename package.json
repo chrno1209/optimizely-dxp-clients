@@ -2,12 +2,13 @@
   "name": "optimizely-dxp-clients",
   "version": "5.1.4",
   "description": "Javascript clients for Optimizely Products",
-  "repository": "https://github.com/remkoj/optimizely-dxp-clients.git",
+  "repository": "https://github.com/chrno1209/optimizely-dxp-clients.git",
   "author": "Remko Jantzen <693172+remkoj@users.noreply.github.com>",
-  "homepage": "https://github.com/remkoj/optimizely-dxp-clients",
+  "homepage": "https://github.com/chrno1209/optimizely-dxp-clients",
   "license": "Apache-2.0",
   "private": true,
   "devDependencies": {
+    "@changesets/cli": "^2.29.6",
     "@types/node": "^22.16.5",
     "@yarnpkg/sdks": "^3.2.2",
     "browserslist": "^4.25.1",
@@ -53,7 +54,10 @@
     "update:yarn": "yarn set version stable && yarn install && yarn dedupe && yarn run update:sdks",
     "update:all": "yarn run update:yarn && yarn run update:deps && yarn run artefacts",
     "update:license-info": "yarn node ./scripts/licenses.js",
-    "publish": "yarn workspaces foreach -Apt --topological-dev --exclude optimizely-dxp-clients npm publish --tolerate-republish --access public"
+    "publish": "yarn workspaces foreach -Apt --topological-dev --exclude optimizely-dxp-clients npm publish --access public",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
   },
   "resolutions": {
     "picomatch": "^4"

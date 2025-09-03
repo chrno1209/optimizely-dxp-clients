@@ -1,7 +1,7 @@
 # Optimizely CMS Command Line Toolkit <!-- omit in toc -->
 A collection of Command Line tools used to increase productivity when working with the Optimizely CMS from a TypeScript / JavaScript based frontend.
 
-The defaults and methods are based upon using a Next.JS application with the conventions introduced by the [Create Next App template](https://github.com/remkoj/optimizely-saas-starter)
+The defaults and methods are based upon using a Next.JS application with the conventions introduced by the [Create Next App template](https://github.com/chrno1209/optimizely-saas-starter)
 
 - [1. Installing](#1-installing)
 - [2. General usage and parameters](#2-general-usage-and-parameters)

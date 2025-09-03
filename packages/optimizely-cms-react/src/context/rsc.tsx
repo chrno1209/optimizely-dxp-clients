@@ -26,6 +26,8 @@ export type ServerContextArgs = {
   locale?: string
   mode?: RenderMode
   editableContent?: ContentLink
+  params: Record<string, any>;
+  searchParams: Record<string, any>;
 }
 
 export class ServerContext implements GenericContext {
@@ -35,6 +37,8 @@ export class ServerContext implements GenericContext {
   private _factory: ComponentFactory
   private _editable: GenericContext['editableContent']
   private _editableIsExperience: boolean = false
+  private _params: Record<string, any>
+  private _searchParams: Record<string, any>
 
   get client(): IOptiGraphClient | undefined {
     return this._client
@@ -67,6 +71,12 @@ export class ServerContext implements GenericContext {
   get editableContentIsExperience(): boolean {
     return this._editableIsExperience
   }
+  get params(){
+      return this._params;
+  }
+  get searchParams(){
+      return this._searchParams;
+  }
   set editableContentIsExperience(newValue: boolean) {
     this._editableIsExperience = newValue
   }
@@ -77,6 +87,8 @@ export class ServerContext implements GenericContext {
     locale,
     mode,
     editableContent,
+    params,
+    searchParams,
   }: ServerContextArgs) {
     this._factory = Array.isArray(factory)
       ? new DefaultComponentFactory(factory)
@@ -85,6 +97,8 @@ export class ServerContext implements GenericContext {
     this._locale = locale
     this._mode = mode ?? 'public'
     this._editable = editableContent
+    this._params = params
+    this._searchParams = searchParams
   }
 
   public setMode(mode: 'edit' | 'preview' | 'public'): ServerContext {

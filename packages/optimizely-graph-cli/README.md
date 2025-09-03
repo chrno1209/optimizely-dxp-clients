@@ -1,7 +1,7 @@
 # Optimizely Content Graph CLI
 Command line utitilities to work with Optimizely Content Graph.
 
-[Release notes](https://github.com/remkoj/optimizely-dxp-clients/releases)
+[Release notes](https://github.com/chrno1209/optimizely-dxp-clients/releases)
 
 ## Installation
 Use your package manager of choice to install this package as development dependency. 

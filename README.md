@@ -5,9 +5,9 @@
 > [!IMPORTANT]  
 > The GraphQL Codegen preset requires a patch to enable it to work with recursive queries. Make sure to run this command after every update to ensure you're using the latest patches: `yarn opti-graph patches:apply`. Adjust when used in a mono-repo to patch the correct package.json, for example: `yarn workspace frontend opti-graph patches:apply -p ../../`
 
-This repository contains the SDKs created by [Remko Jantzen](https://github.com/remkoj) and maintained in collaboration [with the community](https://github.com/remkoj/optimizely-dxp-clients/graphs/contributors) to use Optimizely products within Javascript. Though a few of these SDKs are generic, the focus is on Next.JS as framework. See the [GitHub releases page](https://github.com/remkoj/optimizely-dxp-clients/releases) for the latest updates.
+This repository contains the SDKs created by [Remko Jantzen](https://github.com/remkoj) and maintained in collaboration [with the community](https://github.com/chrno1209/optimizely-dxp-clients/graphs/contributors) to use Optimizely products within Javascript. Though a few of these SDKs are generic, the focus is on Next.JS as framework. See the [GitHub releases page](https://github.com/chrno1209/optimizely-dxp-clients/releases) for the latest updates.
 
-If you find a bug, or have a feature request, please [report it as an issue](https://github.com/remkoj/optimizely-dxp-clients/issues) or contribute your fix/enhancement as a [Pull request](https://github.com/remkoj/optimizely-dxp-clients/pulls).
+If you find a bug, or have a feature request, please [report it as an issue](https://github.com/chrno1209/optimizely-dxp-clients/issues) or contribute your fix/enhancement as a [Pull request](https://github.com/chrno1209/optimizely-dxp-clients/pulls).
 
 ## Packages
 | Package | Focus | Purpose |
@@ -34,7 +34,7 @@ These SDKs rely on - but don't include or bundle - work from others. These depen
 
 ## Release Notes
 ### v4.2.0 - latest
-Release notes are provided on the [GitHub releases page](https://github.com/remkoj/optimizely-dxp-clients/releases).
+Release notes are provided on the [GitHub releases page](https://github.com/chrno1209/optimizely-dxp-clients/releases).
 
 ### v4.1.0
 - **Patches:** Dependencies have been updated to resolve vulnerabilities
