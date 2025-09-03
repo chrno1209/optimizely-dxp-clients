@@ -1,6 +1,6 @@
 import type { ApiService } from './types'
 import * as Responses from './responses'
-import createAdminApi from '@remkoj/optimizely-graph-client/admin'
+import createAdminApi from '@eshn/optimizely-graph-client/admin'
 import getConfig from '../config'
 
 

@@ -1,5 +1,5 @@
 import 'server-only'
-import { type ComponentFactory, DefaultComponentFactory, RichTextComponentDictionary } from '@remkoj/optimizely-cms-react/rsc'
+import { type ComponentFactory, DefaultComponentFactory, RichTextComponentDictionary } from '@eshn/optimizely-cms-react/rsc'
 import cmsComponents from './cms'
 
 // Create the server factory, to be reused throughout the application

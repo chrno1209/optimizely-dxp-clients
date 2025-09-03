@@ -1,5 +1,5 @@
 import type { Argv, CommandModule, ArgumentsCamelCase } from 'yargs'
-import type { CmsIntegrationApiOptions } from '@remkoj/optimizely-cms-api'
+import type { CmsIntegrationApiOptions } from '@eshn/optimizely-cms-api'
 
 export type OptiCmsArgs<P extends Record<string,any> = {}> = {
     cms_url: URL;

@@ -1,5 +1,5 @@
 import type { EditPageProps, ValidatedEditPageProps, ContentRequest } from './types.js'
-import { AuthMode } from '@remkoj/optimizely-graph-client'
+import { AuthMode } from '@eshn/optimizely-graph-client'
 
 export function isValidRequest(toTest: EditPageProps, throwOnInvalid: boolean = false, isDevelopment: boolean = false) : toTest is ValidatedEditPageProps
 {

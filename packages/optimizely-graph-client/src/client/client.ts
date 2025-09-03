@@ -301,7 +301,7 @@ export class ContentGraphClient extends GraphQLClient implements IOptiGraphClien
   protected buildDefaultHeaders(): Record<string, string> {
     // Default headers
     const headers: Record<string, string> = {
-      "X-Client": "@RemkoJ/OptimizelyGraphClient"
+      "X-Client": "@eshn/OptimizelyGraphClient"
     }
 
     // Add feature flag based headers

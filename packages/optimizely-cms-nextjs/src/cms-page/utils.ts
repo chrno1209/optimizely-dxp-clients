@@ -1,5 +1,5 @@
-import type { ChannelDefinition } from "@remkoj/optimizely-graph-client"
-import { localeToGraphLocale as coreLocaleToGraphLocale } from "@remkoj/optimizely-graph-client/utils"
+import type { ChannelDefinition } from "@eshn/optimizely-graph-client"
+import { localeToGraphLocale as coreLocaleToGraphLocale } from "@eshn/optimizely-graph-client/utils"
 
 // Extract the path as string array from a given URL
 export function urlToPath(baseUrl: URL, language?: string) : string[] {

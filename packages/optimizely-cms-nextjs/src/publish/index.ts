@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from 'next/server.js'
 import { revalidatePath, revalidateTag } from "next/cache.js"
-import { type ClientFactory, type IOptiGraphClient, OptiCmsSchema, RouteResolver, type Route } from '@remkoj/optimizely-graph-client'
+import { type ClientFactory, type IOptiGraphClient, OptiCmsSchema, RouteResolver, type Route } from '@eshn/optimizely-graph-client'
 import { createAuthorizedClient } from '../client.js'
 
 export { type NextRequest, NextResponse } from 'next/server.js'

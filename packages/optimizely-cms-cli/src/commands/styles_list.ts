@@ -3,7 +3,7 @@ import chalk from 'chalk'
 import figures from 'figures'
 import Table from 'cli-table3'
 
-import { OptiCmsVersion } from '@remkoj/optimizely-cms-api'
+import { OptiCmsVersion } from '@eshn/optimizely-cms-api'
 import { createCmsClient } from '../tools/cmsClient.js'
 import { getStyles } from '../tools/styles.js'
 

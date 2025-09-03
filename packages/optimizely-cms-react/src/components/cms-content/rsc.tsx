@@ -7,7 +7,7 @@ import {
   normalizeContentLink,
   contentLinkToString,
   type ContentLink,
-} from '@remkoj/optimizely-graph-client'
+} from '@eshn/optimizely-graph-client'
 import resolveComponent, {
   isComponentMissingComponent,
 } from './resolve-component.js'

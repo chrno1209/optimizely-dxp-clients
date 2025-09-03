@@ -1,7 +1,7 @@
-import { createEditPageComponent } from '@remkoj/optimizely-cms-nextjs/preview'
+import { createEditPageComponent } from '@eshn/optimizely-cms-nextjs/preview'
 import { getContentById } from '@/gql/functions'
 import { factory } from '@/components/factory'
-import { createClient } from '@remkoj/optimizely-graph-client'
+import { createClient } from '@eshn/optimizely-graph-client'
 
 export default createEditPageComponent(factory, {
   loader: getContentById,

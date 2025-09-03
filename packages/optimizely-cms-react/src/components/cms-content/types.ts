@@ -1,7 +1,7 @@
 import { type PropsWithChildren, type ComponentType, type ComponentProps, type ReactNode } from 'react'
 import type { CmsComponent } from '../../types.js'
 import type { PropsWithContext, PropsWithOptionalContext } from "../../context/types.js"
-import type { ContentLinkWithLocale, InlineContentLinkWithLocale } from "@remkoj/optimizely-graph-client"
+import type { ContentLinkWithLocale, InlineContentLinkWithLocale } from "@eshn/optimizely-graph-client"
 
 export type CmsContentProps<LocalesType = string> = PropsWithChildren<PropsWithOptionalContext<{
   /**

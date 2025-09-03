@@ -4,7 +4,7 @@ import {
   isOptiGraphClient,
   type IOptiGraphClient,
   type ContentLink,
-} from '@remkoj/optimizely-graph-client'
+} from '@eshn/optimizely-graph-client'
 import React from 'react'
 import {
   type GenericContext,

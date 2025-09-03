@@ -1,5 +1,5 @@
 {
-  "name": "@remkoj/optimizely-cms-cli",
+  "name": "@eshn/optimizely-cms-cli",
   "description": "Optimizely CMS CLI Tools",
   "type": "module",
   "version": "5.1.3",
@@ -17,7 +17,7 @@
     "opti-cms": "node ./dist/index.js"
   },
   "devDependencies": {
-    "@remkoj/optimizely-cms-api": "workspace:5.1.3",
+    "@eshn/optimizely-cms-api": "workspace:5.1.3",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-typescript": "^12.1.4",
     "@types/node": "^22.16.4",
@@ -27,7 +27,7 @@
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "@remkoj/optimizely-cms-api": "^5.1.3",
+    "@eshn/optimizely-cms-api": "^5.1.3",
     "@types/node": "*"
   },
   "dependencies": {

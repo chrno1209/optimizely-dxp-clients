@@ -6,8 +6,8 @@ console.log(`  - Environments: ${loadEnvResult.loadedEnvFiles.map(x => x.path).j
 
 // Actual code generation setup
 import type { CodegenConfig } from '@graphql-codegen/cli'
-import getSchemaInfo from '@remkoj/optimizely-graph-client/codegen'
-import OptimizelyGraphPreset, { type PresetOptions as OptimizelyGraphPresetOptions } from '@remkoj/optimizely-graph-functions/preset'
+import getSchemaInfo from '@eshn/optimizely-graph-client/codegen'
+import OptimizelyGraphPreset, { type PresetOptions as OptimizelyGraphPresetOptions } from '@eshn/optimizely-graph-functions/preset'
 
 // Create the configuration itself
 const config: CodegenConfig = {

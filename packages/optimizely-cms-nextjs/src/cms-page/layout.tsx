@@ -3,11 +3,11 @@ import { type Metadata, type ResolvingMetadata } from 'next'
 import type {
   ChannelDefinition,
   ClientFactory,
-} from '@remkoj/optimizely-graph-client'
+} from '@eshn/optimizely-graph-client'
 import type { DefaultCmsPageProps } from './page.js'
 import { type GetMetaDataByPathMethod } from './data.js'
 import { createClient } from '../client.js'
-import { Utils, isDebug } from '@remkoj/optimizely-cms-react/rsc'
+import { Utils, isDebug } from '@eshn/optimizely-cms-react/rsc'
 
 export type CmsPageLayout = {
   generateMetadata: (

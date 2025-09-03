@@ -1,4 +1,4 @@
-import { CmsIntegrationApiOptions, getCmsIntegrationApiConfigFromEnvironment } from '@remkoj/optimizely-cms-api'
+import { CmsIntegrationApiOptions, getCmsIntegrationApiConfigFromEnvironment } from '@eshn/optimizely-cms-api'
 import yargs from 'yargs'
 import { type OptiCmsApp } from './types.js'
 import chalk from 'chalk';

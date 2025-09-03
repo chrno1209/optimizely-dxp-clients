@@ -1,6 +1,6 @@
 import { getArgsConfig, getFrontendURL } from "../config.js";
 import type { CliModule } from '../types.js'
-import ChannelRepository, { type ChannelDefinition } from '@remkoj/optimizely-graph-client/channels'
+import ChannelRepository, { type ChannelDefinition } from '@eshn/optimizely-graph-client/channels'
 import fs from 'node:fs'
 import path from 'node:path'
 import chalk from 'chalk'
@@ -72,7 +72,7 @@ export const createSiteConfigModule: CliModule<CreateSiteConfigProps> = {
       ' *',
       ' * Use yarn opti-graph config:create [file_path] to re-generate this file',
       ' */',
-      'import { ChannelDefinition, type ChannelDefinitionData } from "@remkoj/optimizely-graph-client"',
+      'import { ChannelDefinition, type ChannelDefinitionData } from "@eshn/optimizely-graph-client"',
       '',
       `const generated_data : ChannelDefinitionData = ${JSON.stringify(siteDefinition)};`,
       '',

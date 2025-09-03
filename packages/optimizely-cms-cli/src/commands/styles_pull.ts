@@ -1,6 +1,6 @@
 import type { CliModule } from '../types.js'
 import { parseArgs } from '../tools/parseArgs.js'
-import { type IntegrationApi, OptiCmsVersion } from '@remkoj/optimizely-cms-api'
+import { type IntegrationApi, OptiCmsVersion } from '@eshn/optimizely-cms-api'
 import chalk from 'chalk'
 import figures from 'figures'
 import fs from 'node:fs'
@@ -113,7 +113,7 @@ export const StylesPullCommand : StylesPullModule = {
                 
                 // Write Style definition
                 const imports : string[] = [
-                    'import type { LayoutProps } from "@remkoj/optimizely-cms-react"',
+                    'import type { LayoutProps } from "@eshn/optimizely-cms-react"',
                     'import type { ReactNode } from "react"'
                 ]
                 const typeContents : string[] = []

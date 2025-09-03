@@ -1,4 +1,4 @@
-import ChannelRepository from '@remkoj/optimizely-graph-client/channels'
+import ChannelRepository from '@eshn/optimizely-graph-client/channels'
 
 const cms_url = process.env.OPTIMIZELY_CMS_URL ?? 'https://example.cms.optimizely.com';
 

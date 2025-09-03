@@ -15,7 +15,7 @@ The defaults and methods are based upon using a Next.JS application with the con
 ## 1. Installing
 This package has been designed to work in a Yarn PnP / Zero-install environment, it may or may not work with other package managers.
 ```bash
-yarn add --dev @remkoj/optimizely-cms-cli
+yarn add --dev @eshn/optimizely-cms-cli
 ```
 
 ## 2. General usage and parameters
@@ -40,7 +40,7 @@ All commands share these parameters that configure the frontend environment.
 | --help | | Show help text
 
 ### 2.2. Environment variables
-This CLI tool shares the environment variables with [@remkoj/optimizely-cms-api](https://www.npmjs.com/package/@remkoj/optimizely-cms-api). When starting the CLI tool, it looks for `.env` and `.env.local` to extend the environment variables and thus works using the Next.JS conventions.
+This CLI tool shares the environment variables with [@eshn/optimizely-cms-api](https://www.npmjs.com/package/@eshn/optimizely-cms-api). When starting the CLI tool, it looks for `.env` and `.env.local` to extend the environment variables and thus works using the Next.JS conventions.
 
 ## 3. Available commands
 The following commands are available, you can always run `opti-cms --help` or `opti-cms [command] --help` to see all information for the CLI utility or command. If the command is omitted, the CLI will assume the `cms:version` command.
@@ -54,7 +54,7 @@ The following commands are available, you can always run `opti-cms --help` or `o
 | `nextjs:factory` | Generate the component factories needed for suggested implementation pattern of Optimizely CMS in Next.JS. See [3.1. Generate React Component Factory](#31-generate-react-component-factory) |
 
 ### 3.1. Generate React Component Factory
-This is a companion method to the ComponentFactory / DefaultComponentFactory implementation within [@remkoj/optimizely-cms-react](https://www.npmjs.com/package/@remkoj/optimizely-cms-react) that is used to resolve content types within Optimizely CMS into React Components. This method will create the needed files to easily construct the factory from the components in the frontend.
+This is a companion method to the ComponentFactory / DefaultComponentFactory implementation within [@eshn/optimizely-cms-react](https://www.npmjs.com/package/@eshn/optimizely-cms-react) that is used to resolve content types within Optimizely CMS into React Components. This method will create the needed files to easily construct the factory from the components in the frontend.
 
 #### Usage & example<!-- omit in toc -->
 Command: `nextjs:factory`

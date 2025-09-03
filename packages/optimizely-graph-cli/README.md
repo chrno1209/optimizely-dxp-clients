@@ -7,7 +7,7 @@ Command line utitilities to work with Optimizely Content Graph.
 Use your package manager of choice to install this package as development dependency. 
 
 ```bash
-yarn add --dev @remkoj/optimizely-graph-cli
+yarn add --dev @eshn/optimizely-graph-cli
 ```
 
 ## Usage

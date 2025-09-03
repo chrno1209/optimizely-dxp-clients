@@ -5,7 +5,7 @@ import type {
   GenericContextProps,
   ElementProps,
 } from '../type-utils.js'
-import { type ContentLink } from '@remkoj/optimizely-graph-client'
+import { type ContentLink } from '@eshn/optimizely-graph-client'
 
 export type CmsEditableProps<FT extends ElementType> = PropsWithChildren<
   {

@@ -1,4 +1,4 @@
-import { type IntegrationApi } from '@remkoj/optimizely-cms-api'
+import { type IntegrationApi } from '@eshn/optimizely-cms-api'
 import path from 'node:path'
 import fs from 'node:fs'
 import chalk from 'chalk'
@@ -102,7 +102,7 @@ type TemplateFn = (contentType: IntegrationApi.ContentType, varName: string, dis
 const Templates: Record<'default', TemplateFn> & Partial<Record<IntegrationApi.ContentBaseType, TemplateFn>> =
 {
   // Default Template for all components without specifics
-  default: (contentType, varName, displayTemplate, baseDisplayTemplate) => `import { type CmsComponent } from "@remkoj/optimizely-cms-react";
+  default: (contentType, varName, displayTemplate, baseDisplayTemplate) => `import { type CmsComponent } from "@eshn/optimizely-cms-react";
 import { ${contentType.key}DataFragmentDoc, type ${contentType.key}DataFragment } from "@/gql/graphql";${displayTemplate ? `
 import { ${displayTemplate} } from "./displayTemplates";` : ''}${baseDisplayTemplate ? `
 import { ${baseDisplayTemplate} } from "../styles/displayTemplates";` : ''}
@@ -127,7 +127,7 @@ ${varName}.getDataFragment = () => ['${contentType.key}Data', ${contentType.key}
 export default ${varName}`,
 
   // Template for all page component types
-  page: (contentType, varName, displayTemplate) => `import { type OptimizelyNextPage as CmsComponent } from "@remkoj/optimizely-cms-nextjs";
+  page: (contentType, varName, displayTemplate) => `import { type OptimizelyNextPage as CmsComponent } from "@eshn/optimizely-cms-nextjs";
 import { ${contentType.key}DataFragmentDoc, type ${contentType.key}DataFragment } from "@/gql/graphql";${displayTemplate ? `
 import { ${displayTemplate} } from "./displayTemplates";` : ''}
 import { getSdk } from "@/gql"
@@ -157,10 +157,10 @@ ${varName}.getMetaData = async (contentLink, locale, client) => {
 export default ${varName}`,
 
   // Template for all experience component types
-  experience: (contentType, varName, displayTemplate) => `import { type OptimizelyNextPage as CmsComponent } from "@remkoj/optimizely-cms-nextjs";
+  experience: (contentType, varName, displayTemplate) => `import { type OptimizelyNextPage as CmsComponent } from "@eshn/optimizely-cms-nextjs";
 import { getFragmentData } from "@/gql/fragment-masking";
-import { ExperienceDataFragmentDoc, CompositionDataFragmentDoc, ${contentType.key}DataFragmentDoc, type ${contentType.key}DataFragment } from "@/gql/graphql";
-import { OptimizelyComposition, isNode, CmsEditable } from "@remkoj/optimizely-cms-react/rsc";${displayTemplate ? `
+import { ExperienceDataFragmentDoc, CompositionNodeDataFragmentDoc, ${contentType.key}DataFragmentDoc, type ${contentType.key}DataFragment } from "@/gql/graphql";
+import { OptimizelyComposition, isNode, CmsEditable } from "@eshn/optimizely-cms-react/rsc";${displayTemplate ? `
 import { ${displayTemplate} } from "./displayTemplates";` : ''}
 import { getSdk } from "@/gql"
 
@@ -169,7 +169,7 @@ import { getSdk } from "@/gql"
  * ${contentType.description}
  */
 export const ${varName} : CmsComponent<${contentType.key}DataFragment${displayTemplate ? ', ' + displayTemplate : ''}> = ({ data${displayTemplate ? ', layoutProps' : ''}, ctx }) => {
-    const composition = getFragmentData(CompositionDataFragmentDoc, getFragmentData(ExperienceDataFragmentDoc, data)?.composition)
+    const composition = getFragmentData(CompositionNodeDataFragmentDoc, getFragmentData(ExperienceDataFragmentDoc, data)?.composition)
     return <CmsEditable as="div" className="mx-auto px-2 container" cmsFieldName="unstructuredData" ctx={ctx}>
         { composition && isNode(composition) && <OptimizelyComposition node={composition} /> }
     </CmsEditable>

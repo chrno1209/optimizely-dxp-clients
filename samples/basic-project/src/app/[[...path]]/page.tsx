@@ -2,8 +2,8 @@ import {
   createClient,
   AuthMode,
   type IOptiGraphClient,
-} from '@remkoj/optimizely-graph-client'
-import { createPage } from '@remkoj/optimizely-cms-nextjs/page'
+} from '@eshn/optimizely-graph-client'
+import { createPage } from '@eshn/optimizely-cms-nextjs/page'
 import { factory } from '@/components/factory'
 import { draftMode } from 'next/headers'
 import { getContentByPath } from '@/gql/functions'

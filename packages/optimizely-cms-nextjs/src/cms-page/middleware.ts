@@ -1,6 +1,6 @@
 import 'server-only'
 import { NextResponse, type NextRequest, type NextMiddleware } from "next/server.js"
-import { type ChannelDefinition } from "@remkoj/optimizely-graph-client"
+import { type ChannelDefinition } from "@eshn/optimizely-graph-client"
 import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 
