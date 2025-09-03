@@ -17,7 +17,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
           registry-url: "https://registry.npmjs.org"
 
       - name: Configure npm auth
@@ -26,7 +26,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Install dependencies
-        run: yarn install --immutable
+        run: corepack enable && yarn install --immutable
 
       - name: Build
         run: yarn recompile && yarn prepare
