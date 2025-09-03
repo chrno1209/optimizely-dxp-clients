@@ -4,7 +4,7 @@ import figures from 'figures'
 import path from 'node:path'
 import fs from 'node:fs'
 import { input, select, confirm  } from '@inquirer/prompts';
-import { OptiCmsVersion } from '@remkoj/optimizely-cms-api';
+import { OptiCmsVersion } from '@eshn/optimizely-cms-api';
 
 // Within this package
 import type { CliModule } from '../types.js'

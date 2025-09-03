@@ -8,15 +8,15 @@ import type {
 import {
   contentLinkToString,
   localeToGraphLocale,
-} from '@remkoj/optimizely-graph-client/utils'
-import { type ContentLinkWithLocale } from '@remkoj/optimizely-graph-client'
+} from '@eshn/optimizely-graph-client/utils'
+import { type ContentLinkWithLocale } from '@eshn/optimizely-graph-client'
 import {
   ServerContext,
   Utils,
   CmsContent,
   updateSharedServerContext,
   type ComponentFactory,
-} from '@remkoj/optimizely-cms-react/rsc'
+} from '@eshn/optimizely-cms-react/rsc'
 import { notFound } from 'next/navigation.js'
 import OnPageEdit from '../components/on-page-edit.js'
 import { createAuthorizedClient } from '../client.js'

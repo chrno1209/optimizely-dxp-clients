@@ -1,5 +1,5 @@
 import type { CliModule } from '../types.js'
-import type { IntegrationApi } from '@remkoj/optimizely-cms-api'
+import type { IntegrationApi } from '@eshn/optimizely-cms-api'
 import createClient from '../tools/cmsClient.js'
 import chalk from 'chalk'
 import figures from 'figures'

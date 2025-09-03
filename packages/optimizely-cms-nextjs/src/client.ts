@@ -1,9 +1,9 @@
 import 'server-only'
-import { createClient as createBaseClient, AuthMode, type IOptiGraphClient, type OptimizelyGraphConfig } from '@remkoj/optimizely-graph-client'
+import { createClient as createBaseClient, AuthMode, type IOptiGraphClient, type OptimizelyGraphConfig } from '@eshn/optimizely-graph-client'
 
 /**
  * Create a new client instance. This is a direct wrapper for the `createClient` function
- * exported from `@remkoj/optimizely-graph-client`.
+ * exported from `@eshn/optimizely-graph-client`.
  * 
  * @returns The newly created GraphQL Client
  */
@@ -13,7 +13,7 @@ export function createClient(): IOptiGraphClient {
 
 /**
  * Create a new client instance, with the needed configuration to access restricted content. This
- * wraps the `createClient` function from `@remkoj/optimizely-graph-client` and applies some 
+ * wraps the `createClient` function from `@eshn/optimizely-graph-client` and applies some 
  * configuration defaults.
  * 
  * @returns The newly created GraphQL Client
@@ -43,7 +43,7 @@ export function createAuthorizedClient(token?: string, config?: OptimizelyGraphC
 
 /**
  * Create a new client instance, with the needed configuration to access restricted content. This
- * wraps the `createClient` function from `@remkoj/optimizely-graph-client` and applies some 
+ * wraps the `createClient` function from `@eshn/optimizely-graph-client` and applies some 
  * configuration defaults.
  * 
  * @deprecated use createAuthorizedClient
@@ -53,7 +53,7 @@ export const getAuthorizedServerClient = createAuthorizedClient
 
 /**
  * Create a new client instance. This is a direct wrapper for the `createClient` function
- * exported from `@remkoj/optimizely-graph-client`.
+ * exported from `@eshn/optimizely-graph-client`.
  * 
  * @deprecated  use createClient
  * @returns The newly created GraphQL Client

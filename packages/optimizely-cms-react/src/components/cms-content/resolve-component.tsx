@@ -7,7 +7,7 @@ import {
   type PropsWithChildren,
   type ComponentType,
 } from 'react'
-import { type ContentLink } from '@remkoj/optimizely-graph-client'
+import { type ContentLink } from '@eshn/optimizely-graph-client'
 
 export function getComponentLabel(componentInstance?: ComponentType | null) {
   if (!componentInstance) return 'n/a'

@@ -15,7 +15,7 @@ Default implementation of the Catch-All route in Next.js to allow rendering any 
 ```typescript
 // In `src/app/[[...path]]/page.tsx`
 
-import { CmsPage as OptimizelyCmsPage } from "@remkoj/optimizely-cms-nextjs"
+import { CmsPage as OptimizelyCmsPage } from "@eshn/optimizely-cms-nextjs"
 import getFactory from '@/components/factory' // Or any other file where you have your component factory defined.
 import { getContentByPath } from "@/gql/functions" // Or any other file that has the `getContentByPath` function
 
@@ -45,7 +45,7 @@ Default implementation to handle webhooks from Optimizely Graph to purge the Nex
 ```typescript
 // In `src/app/api/content/publish/route.ts`
 
-import createPublishApi from '@remkoj/optimizely-cms-nextjs/publish'
+import createPublishApi from '@eshn/optimizely-cms-nextjs/publish'
 
 const publishApi = createPublishApi(
     { 
@@ -73,7 +73,7 @@ The `createPublishApi` method has many more options allowing you to take control
 The package provides the following enhancements for Next.js middleware:
 | Wrapper | import | Purpose |
 | --- | --- | --- |
-| withEditFallback | `@remkoj/optimizely-cms-nextjs/preview` | Rewrite incoming Optimizely CMS 12 preview / on-page-edit URLs to Optimizely SaaS CMS preview  URLs |
-| withLanguagePrefix | `@remkoj/optimizely-cms-nextjs/page` | Handle the redirect of the homepage `/` to the locale that best matches the incoming request, such as `/en`. The locales and their URLs are taken from the second parameter - the ChannelDefinition.
+| withEditFallback | `@eshn/optimizely-cms-nextjs/preview` | Rewrite incoming Optimizely CMS 12 preview / on-page-edit URLs to Optimizely SaaS CMS preview  URLs |
+| withLanguagePrefix | `@eshn/optimizely-cms-nextjs/page` | Handle the redirect of the homepage `/` to the locale that best matches the incoming request, such as `/en`. The locales and their URLs are taken from the second parameter - the ChannelDefinition.
 
 If you use both wrappers, the `withEditFallback` wrapper must wrap the `withLanguagePrefix` wrapper, to ensure that the edit mode URL is rewritten before the language prefix is applied.

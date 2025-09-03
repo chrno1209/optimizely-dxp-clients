@@ -5,8 +5,8 @@
 > For some of the commonly used old exports it still contains placeholders, however those are deprecated and will be removed in a future version
 
 This package provides two main entry points, depending on your build environment:
-- `@remkoj/optimizely-cms-react` This export contains the library, whith React components that use a client side context
-- `@remkoj/optimizely-cms-react/rsc` This export contains the library, whith React components that use a server side context
+- `@eshn/optimizely-cms-react` This export contains the library, whith React components that use a client side context
+- `@eshn/optimizely-cms-react/rsc` This export contains the library, whith React components that use a server side context
 
 ## Components & Functions
 ### Shared components & functions
@@ -23,7 +23,7 @@ Regardless of which export you're using, the following components are available.
 | `DefaultComponentFactory` | Default implementation of the `ComponentFactory` interface. See below for more information on using the Component Factory. |
 
 ### Server Side components & functions
-In addition to the components above, the following methods are available in the `@remkoj/optimizely-cms-react/rsc` export only:
+In addition to the components above, the following methods are available in the `@eshn/optimizely-cms-react/rsc` export only:
 
 | Component / Function | Description |
 | --- | --- |
@@ -32,7 +32,7 @@ In addition to the components above, the following methods are available in the 
 | `isDevelopment()` | Test if the environment variables flag the current environment to be a developer environment. |
 
 ### Client Side components & functions
-In addition to the components above, the following methods are available in the `@remkoj/optimizely-cms-react` export only:
+In addition to the components above, the following methods are available in the `@eshn/optimizely-cms-react` export only:
 
 | Component / Function | Description |
 | --- | --- |

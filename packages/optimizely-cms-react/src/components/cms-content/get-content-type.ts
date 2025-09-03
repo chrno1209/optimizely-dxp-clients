@@ -1,4 +1,4 @@
-import { isContentLink, isInlineContentLink, contentLinkToString, type IOptiGraphClient, type ContentLink, type InlineContentLink } from "@remkoj/optimizely-graph-client"
+import { isContentLink, isInlineContentLink, contentLinkToString, type IOptiGraphClient, type ContentLink, type InlineContentLink } from "@eshn/optimizely-graph-client"
 import type { ContentType } from "../../types.js"
 import { gql } from 'graphql-request'
 import { contentLinkToRequestVariables, normalizeContentType } from "../../utilities.js"

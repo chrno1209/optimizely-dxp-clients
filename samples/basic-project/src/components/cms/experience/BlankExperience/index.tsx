@@ -1,4 +1,4 @@
-import { type OptimizelyNextPage as CmsComponent } from '@remkoj/optimizely-cms-nextjs'
+import { type OptimizelyNextPage as CmsComponent } from '@eshn/optimizely-cms-nextjs'
 import { getFragmentData } from '@/gql/fragment-masking'
 import {
   ExperienceDataFragmentDoc,
@@ -9,7 +9,7 @@ import {
   OptimizelyComposition,
   isNode,
   CmsEditable,
-} from '@remkoj/optimizely-cms-react/rsc'
+} from '@eshn/optimizely-cms-react/rsc'
 import { getSdk } from '@/gql'
 
 /**

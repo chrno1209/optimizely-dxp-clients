@@ -1,5 +1,5 @@
 {
-  "name": "@remkoj/optimizely-cms-nextjs",
+  "name": "@eshn/optimizely-cms-nextjs",
   "description": "Next.JS integration for Optimizely SaaS CMS",
   "license": "Apache-2.0",
   "version": "5.1.4",
@@ -44,8 +44,8 @@
     }
   },
   "devDependencies": {
-    "@remkoj/optimizely-cms-react": "workspace:5.1.4",
-    "@remkoj/optimizely-graph-client": "workspace:5.1.4",
+    "@eshn/optimizely-cms-react": "workspace:5.1.4",
+    "@eshn/optimizely-graph-client": "workspace:5.1.4",
     "@types/negotiator": "^0.6.4",
     "@types/node": "^22.16.5",
     "@types/react": "^18.3.23",
@@ -65,8 +65,8 @@
     "negotiator": "^1.0.0"
   },
   "peerDependencies": {
-    "@remkoj/optimizely-cms-react": "^5.1.4",
-    "@remkoj/optimizely-graph-client": "^5.1.4",
+    "@eshn/optimizely-cms-react": "^5.1.4",
+    "@eshn/optimizely-graph-client": "^5.1.4",
     "graphql": "^16",
     "graphql-request": "^6",
     "next": "^14",

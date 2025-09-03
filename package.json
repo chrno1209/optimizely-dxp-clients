@@ -33,8 +33,8 @@
     "singleQuote": true
   },
   "scripts": {
-    "opti-graph": "yarn workspace @remkoj/optimizely-graph-cli opti-graph",
-    "opti-cms": "yarn workspace @remkoj/optimizely-cms-cli opti-cms",
+    "opti-graph": "yarn workspace @eshn/optimizely-graph-cli opti-graph",
+    "opti-cms": "yarn workspace @eshn/optimizely-cms-cli opti-cms",
     "clean": "yarn node ./scripts/clean.js",
     "generate": "yarn update-browserslist-db && yarn workspaces foreach -Apt --topological-dev --exclude optimizely-dxp-clients run generate",
     "prepare": "yarn workspaces foreach -Apt --topological-dev --exclude optimizely-dxp-clients run prepare",

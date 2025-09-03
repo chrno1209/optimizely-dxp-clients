@@ -17,7 +17,7 @@ export class OptimizelyGraphAdminApi extends BaseOptimizelyGraphAdminApi {
             BASE: graphConfig.gateway,
             CREDENTIALS: "include",
             HEADERS: {
-                "X-Client": "@RemkoJ/OptimizelyGraphClient",
+                "X-Client": "@eshn/OptimizelyGraphClient",
             }
         }
         super(apiConfig, OptiHttpRequest)

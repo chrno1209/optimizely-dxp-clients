@@ -34,9 +34,9 @@ The package contains the following services:
 ```typescript
 // Import the library
 import { gql } from 'graphql-request'
-import createClient, { AuthMode } from '@remkoj/optimizely-graph-client/client'
-import Router from '@remkoj/optimizely-graph-client/router'
-import ChannelRepository from '@remkoj/optimizely-graph-client/channels'
+import createClient, { AuthMode } from '@eshn/optimizely-graph-client/client'
+import Router from '@eshn/optimizely-graph-client/router'
+import ChannelRepository from '@eshn/optimizely-graph-client/channels'
 
 // Prepare the query
 const document = gql`query {
@@ -135,7 +135,7 @@ client.setFrontendUser({
 ***Warning***: The AdminAPI of Optimizely Graph requires your App Key & Secret as it allows full management of the service. When used in a browser, take all needed steps to prevent leaking of these credentials.
 
 ```typescript
-import createAdminApi from '@remkoj/optimizely-graph-client/admin'
+import createAdminApi from '@eshn/optimizely-graph-client/admin'
 
 // Create an instance of the client, the configuration object may be omitted 
 // when executing on Node.JS. If no configuration is provided, it will be read
@@ -229,7 +229,7 @@ The flags are controlled by the following instance methods & fields on the Clien
 For server-side code, with access to environment variables, adjust according to your case.
 ```typescript
 // Import client & create instance
-import createClient from '@remkoj/optimizely-graph-client/client';
+import createClient from '@eshn/optimizely-graph-client/client';
 const client = createClient();
 
 // Example: Set the default for this client to add support for recursive queries
@@ -254,7 +254,7 @@ This is where the RouteResolver comes in and provides these capabilites, whithou
 #### Example <!-- omit in toc -->
 ```typescript
 // Get the Router from the package
-import Router from '@remkoj/optimizely-graph-client/router'
+import Router from '@eshn/optimizely-graph-client/router'
 
 // Create a new instance, using the Optimizely Graph client
 const router = new Router(client)
@@ -284,7 +284,7 @@ To generate a custom site defintion, the repository has a static method `createD
 
 #### Example <!-- omit in toc -->
 ```typescript
-import ChannelRepository from '@remkoj/optimizely-graph-client/channels'
+import ChannelRepository from '@eshn/optimizely-graph-client/channels'
 
 // Read the CMS URL
 const cms_url = process.env.OPTIMIZELY_CMS_URL ?? 'https://example.cms.optimizely.com';

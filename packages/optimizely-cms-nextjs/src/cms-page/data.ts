@@ -1,5 +1,5 @@
 //import { gql } from "graphql-request"
-import { type IOptiGraphClient } from "@remkoj/optimizely-graph-client"
+import { type IOptiGraphClient } from "@eshn/optimizely-graph-client"
 
 export type GetContentByPathVariables<LocaleType = string> = {
   path: string | string[],

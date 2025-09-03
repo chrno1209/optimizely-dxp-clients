@@ -24,7 +24,7 @@ React components (both client & server) to integrate the browser-side products f
 ## 2. Installation & Configuration
 
 Start by adding the package to your project:
-`yarn add @remkoj/optimizely-one-nextjs`
+`yarn add @eshn/optimizely-one-nextjs`
 
 ### 2.1. Add API Routes
 Then make the service endpoints available by creating a new API route within Next.JS. For the app router this is done by creating this file:
@@ -34,7 +34,7 @@ Then make the service endpoints available by creating a new API route within Nex
 Put the following code in this file to use the API Route handler from the package:
 
 ```typescript
-import { createOptimizelyOneApi } from '@remkoj/optimizely-one-nextjs/api';
+import { createOptimizelyOneApi } from '@eshn/optimizely-one-nextjs/api';
 
 const handler = createOptimizelyOneApi()
 
@@ -50,8 +50,8 @@ export const fetchCache = 'default-no-store'
 Within the global layout (or your ["third party providers component"](https://vercel.com/guides/react-context-state-management-nextjs#rendering-third-party-context-providers-in-server-components), whatever applies best), add the Optimizely One Scripts (`Scripts.Header` & `Scripts.Footer`), Context Provider (`OptimizelyOneProvider`), Page Activator (`PageActivator`), and - if you want to - the demo gadget (`OptimizelyOneGadget`).
 
 ```typescript
-import { Scripts } from '@remkoj/optimizely-one-nextjs/server'
-import { OptimizelyOneProvider, PageActivator, OptimizelyOneGadget } from '@remkoj/optimizely-one-nextjs/client'
+import { Scripts } from '@eshn/optimizely-one-nextjs/server'
+import { OptimizelyOneProvider, PageActivator, OptimizelyOneGadget } from '@eshn/optimizely-one-nextjs/client'
 
 export type RootLayoutProps = {
     children: React.ReactNode
@@ -81,7 +81,7 @@ Whenever you want to track additional events, use the provided hook to get to th
 ```typescript
 'use client'
 import React, { type FunctionComponent } from 'react'
-import { useOptimizelyOne } from '@remkoj/optimizely-one-nextjs/client'
+import { useOptimizelyOne } from '@eshn/optimizely-one-nextjs/client'
 
 export const YourComponent : FunctionComponent<{}> = props => {
     const opti = useOptimizelyOne()
@@ -100,7 +100,7 @@ Within your middleware (`src/middleware.ts`), use the Session to make sure each 
 
 ```typescript
 import { NextResponse, type NextRequest } from "next/server"
-import { Session } from '@remkoj/optimizely-one-nextjs/api'
+import { Session } from '@eshn/optimizely-one-nextjs/api'
 
 export function middleware(request: NextRequest)
 {

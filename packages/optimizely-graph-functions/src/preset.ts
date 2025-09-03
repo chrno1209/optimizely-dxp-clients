@@ -37,7 +37,7 @@ export const preset : Types.OutputPreset<PresetOptions> =
         const CmsDocLoaders : Array<Types.CustomDocumentLoader> = 
             (optiDocs.length == 0 ? ['opti-cms:/fragments/13','opti-cms:/queries/13'] : optiDocs).map(optiDoc => {
                 const loader: Types.CustomDocumentLoader = {}
-                loader[optiDoc] = { loader: "@remkoj/optimizely-graph-functions/loader" }
+                loader[optiDoc] = { loader: "@eshn/optimizely-graph-functions/loader" }
                 return loader
             })
 

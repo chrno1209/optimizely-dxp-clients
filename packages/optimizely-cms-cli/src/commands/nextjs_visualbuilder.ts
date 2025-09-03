@@ -1,4 +1,4 @@
-import { type IntegrationApi } from '@remkoj/optimizely-cms-api'
+import { type IntegrationApi } from '@eshn/optimizely-cms-api'
 import path from 'node:path'
 import fs from 'node:fs'
 import chalk from 'chalk'
@@ -97,7 +97,7 @@ function createGenericNode(basePath: string, force: boolean, debug: boolean) {
   } else if (debug)
     process.stdout.write(chalk.gray(`${figures.arrowRight} Creating generic node component\n`))
 
-  const nodeContent = `import { CmsEditable, type CmsLayoutComponent } from '@remkoj/optimizely-cms-react/rsc'
+  const nodeContent = `import { CmsEditable, type CmsLayoutComponent } from '@eshn/optimizely-cms-react/rsc'
 
 export const VisualBuilderNode : CmsLayoutComponent = ({ editProps, layoutProps, children }) =>
 {

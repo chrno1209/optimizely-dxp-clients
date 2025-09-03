@@ -8,12 +8,12 @@ import {
   RouteResolver,
   type IRouteResolver,
   type Route,
-} from '@remkoj/optimizely-graph-client/router'
+} from '@eshn/optimizely-graph-client/router'
 import {
   type ChannelDefinition,
   ifChannelDefinition,
-} from '@remkoj/optimizely-graph-client/channels'
-import { type IOptiGraphClient } from '@remkoj/optimizely-graph-client/client'
+} from '@eshn/optimizely-graph-client/channels'
+import { type IOptiGraphClient } from '@eshn/optimizely-graph-client/client'
 
 // React Support
 import {
@@ -22,7 +22,7 @@ import {
   updateSharedServerContext,
   type GenericContext,
   type ComponentFactory,
-} from '@remkoj/optimizely-cms-react/rsc'
+} from '@eshn/optimizely-cms-react/rsc'
 
 // Within package
 import { MetaDataResolver } from '../metadata.js'

@@ -1,6 +1,6 @@
 import type { CliModule } from '../types.js'
 import { parseArgs } from '../tools/parseArgs.js'
-import { OptiCmsVersion } from '@remkoj/optimizely-cms-api'
+import { OptiCmsVersion } from '@eshn/optimizely-cms-api'
 import { createCmsClient } from '../tools/cmsClient.js'
 import { glob } from 'glob'
 import path from 'node:path'

@@ -1,7 +1,7 @@
 import type { PropsWithChildren, ComponentType as ReactComponentType } from "react"
 import type { DocumentNode } from "graphql"
 import type { TypedDocumentNode } from '@graphql-typed-document-node/core'
-import type { ContentLinkWithLocale, ContentLink, InlineContentLinkWithLocale } from "@remkoj/optimizely-graph-client"
+import type { ContentLinkWithLocale, ContentLink, InlineContentLinkWithLocale } from "@eshn/optimizely-graph-client"
 import type { GenericContext } from "./context/types.js"
 import type { CmsEditableProps } from "./components/cms-editable/index.js"
 
@@ -9,14 +9,14 @@ import type { CmsEditableProps } from "./components/cms-editable/index.js"
 export type ContentType = string[]
 export type {
   /**
-   * @deprecated  Use the export from `@remkoj/optimizely-graph-client` directly
+   * @deprecated  Use the export from `@eshn/optimizely-graph-client` directly
    */
   ContentLink,
   /**
-   * @deprecated  Use the export from `@remkoj/optimizely-graph-client` directly
+   * @deprecated  Use the export from `@eshn/optimizely-graph-client` directly
    */
   ContentLinkWithLocale
-} from "@remkoj/optimizely-graph-client"
+} from "@eshn/optimizely-graph-client"
 
 export type ComponentCmsEditableProps = Pick<CmsEditableProps<'div'>, 'cmsId' | 'ctx' | 'currentContent'>
 

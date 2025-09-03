@@ -1,7 +1,7 @@
 import { type ComponentType, type PropsWithChildren } from 'react'
-import { type ClientFactory } from '@remkoj/optimizely-graph-client'
+import { type ClientFactory } from '@eshn/optimizely-graph-client'
 import { type GraphQLClient } from 'graphql-request'
-import { type ContentQueryProps } from '@remkoj/optimizely-cms-react/rsc'
+import { type ContentQueryProps } from '@eshn/optimizely-cms-react/rsc'
 
 export type ContentRequest = (Omit<ContentQueryProps<string>, 'path'> & { path: string | null, token: string, ctx: 'edit' | 'preview' })
 

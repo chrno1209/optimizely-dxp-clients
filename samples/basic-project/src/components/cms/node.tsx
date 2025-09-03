@@ -1,7 +1,7 @@
 import {
   CmsEditable,
   type CmsLayoutComponent,
-} from '@remkoj/optimizely-cms-react/rsc'
+} from '@eshn/optimizely-cms-react/rsc'
 
 export const VisualBuilderNode: CmsLayoutComponent = ({
   contentLink,
