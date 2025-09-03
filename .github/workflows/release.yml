@@ -27,9 +27,13 @@ jobs:
 
       - name: Install dependencies
         run: corepack enable && yarn install --immutable
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Build
         run: yarn recompile && yarn prepare
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish packages
         run: yarn publish
