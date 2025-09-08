@@ -20,6 +20,8 @@ export type {
 
 export type ComponentCmsEditableProps = Pick<CmsEditableProps<'div'>, 'cmsId' | 'ctx' | 'currentContent'>
 
+export type ComponentCmsEditableProps = Pick<CmsEditableProps<'div'>, 'cmsId' | 'ctx' | 'currentContent'>
+
 export type CmsComponentProps<T, L extends Record<string, any> = Record<string, any>> = PropsWithChildren<{
   /**
    * The identifier of the content item.
