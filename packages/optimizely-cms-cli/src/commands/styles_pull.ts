@@ -214,7 +214,7 @@ export async function createDisplayTemplateHelper(typeFile: TypeFilesListEntry, 
 
   // Write Style definition
   const imports: string[] = [
-    'import type { LayoutProps } from "@remkoj/optimizely-cms-react"',
+    'import type { LayoutProps } from "@eshn/optimizely-cms-react"',
     'import type { ReactNode } from "react"'
   ]
   const typeContents: string[] = []

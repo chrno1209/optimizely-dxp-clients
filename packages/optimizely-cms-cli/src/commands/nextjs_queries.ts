@@ -1,4 +1,4 @@
-import { IntegrationApi, OptiCmsVersion } from '@remkoj/optimizely-cms-api'
+import { IntegrationApi, OptiCmsVersion } from '@eshn/optimizely-cms-api'
 import path from 'node:path'
 import fs from 'node:fs'
 import chalk from 'chalk'

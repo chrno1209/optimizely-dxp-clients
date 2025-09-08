@@ -59,14 +59,14 @@ function createSpecificNode(template: IntegrationApi.DisplayTemplate, templatePa
 
   const baseType = template.nodeType ?? template.baseType ?? 'unknown';
   const displayTemplateName = getDisplayTemplateInfo(template, templatePath);
-  const imports: string[] = ['import { extractSettings, type CmsLayoutComponent } from "@remkoj/optimizely-cms-react/rsc";'];
+  const imports: string[] = ['import { extractSettings, type CmsLayoutComponent } from "@eshn/optimizely-cms-react/rsc";'];
   const componentProps = [`className="vb:${baseType} vb:${baseType}:${template.key}"`]
   const componentArgs = ['layoutProps', 'children']
   let componentType = 'div'
   if (displayTemplateName)
     imports.push(`import { ${displayTemplateName} } from "../displayTemplates";`)
   if (baseType.toLowerCase() == 'section') {
-    imports.push('import { CmsEditable } from "@remkoj/optimizely-cms-react/rsc";')
+    imports.push('import { CmsEditable } from "@eshn/optimizely-cms-react/rsc";')
     componentType = 'CmsEditable'
     componentProps.push('{ ...editProps }')
     componentArgs.push('editProps')
