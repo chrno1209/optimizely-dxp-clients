@@ -1,8 +1,8 @@
 'use server'
 
-import { type IOptiGraphClient } from "@remkoj/optimizely-graph-client/client";
-import { type IRouteResolver } from "@remkoj/optimizely-graph-client/router";
-import { type ChannelDefinition, ifChannelDefinition } from "@remkoj/optimizely-graph-client/channels";
+import { type IOptiGraphClient } from "@eshn/optimizely-graph-client/client";
+import { type IRouteResolver } from "@eshn/optimizely-graph-client/router";
+import { type ChannelDefinition, ifChannelDefinition } from "@eshn/optimizely-graph-client/channels";
 
 import { getChannelId, type LookupResponse } from "./_base.js";
 import { localeToGraphLocale } from "./utils.js";

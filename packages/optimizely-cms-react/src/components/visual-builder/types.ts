@@ -1,5 +1,5 @@
 import { type ComponentType, type PropsWithChildren } from "react"
-import { type InlineContentLinkWithLocale, type ContentLinkWithLocale } from "@remkoj/optimizely-graph-client"
+import { type InlineContentLinkWithLocale, type ContentLinkWithLocale } from "@eshn/optimizely-graph-client"
 import { type ContentType } from "../../types.js"
 import { type PropsWithContext, type PropsWithOptionalContext } from "../../context/types.js"
 import { type PropsWithCmsContent } from "../cms-content/types.js"

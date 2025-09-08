@@ -12,7 +12,7 @@ export function getGraphQLCodegenSchema(config?: OptimizelyGraphConfig) : Schema
     schemaInfo[cgGateway] = {
         headers: {
             Authorization: `epi-single ${ graphConfig.single_key }`,
-            "X-Client": "@RemkoJ/OptimizelyGraphClient"
+            "X-Client": "@eshn/OptimizelyGraphClient"
         }
     }
     return schemaInfo

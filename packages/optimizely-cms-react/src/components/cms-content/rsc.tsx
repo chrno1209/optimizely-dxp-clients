@@ -7,7 +7,7 @@ import {
   AuthMode,
   normalizeContentLink,
   type ContentLink,
-} from '@remkoj/optimizely-graph-client'
+} from '@eshn/optimizely-graph-client'
 import resolveComponent, {
   isComponentMissingComponent,
 } from './resolve-component.js'

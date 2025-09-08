@@ -1,4 +1,4 @@
-import { type IOptiGraphClient, type OptimizelyGraphConfig, type ContentLink } from "@remkoj/optimizely-graph-client"
+import { type IOptiGraphClient, type OptimizelyGraphConfig, type ContentLink } from "@eshn/optimizely-graph-client"
 import { type ComponentFactory } from "../factory/types.js"
 
 export type RenderMode = 'edit' | 'preview' | 'public'

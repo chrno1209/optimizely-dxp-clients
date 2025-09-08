@@ -1,8 +1,8 @@
 {
-  "name": "@remkoj/optimizely-graph-functions",
-  "repository": "https://github.com/remkoj/optimizely-dxp-clients.git",
+  "name": "@eshn/optimizely-graph-functions",
+  "repository": "https://github.com/chrno1209/optimizely-dxp-clients.git",
   "author": "Remko Jantzen <693172+remkoj@users.noreply.github.com>",
-  "homepage": "https://github.com/remkoj/optimizely-dxp-clients",
+  "homepage": "https://github.com/chrno1209/optimizely-dxp-clients",
   "version": "5.1.4",
   "license": "Apache-2.0",
   "type": "commonjs",
@@ -70,8 +70,8 @@
     "opti-patch": "yarn node dist/patch.js"
   },
   "peerDependencies": {
+    "@eshn/optimizely-graph-client": "^5.1.4",
     "@graphql-typed-document-node/core": "^3",
-    "@remkoj/optimizely-graph-client": "^5.1.4",
     "graphql": "^16",
     "graphql-request": "^6",
     "graphql-tag": "^2"

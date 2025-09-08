@@ -4,7 +4,7 @@ import * as Errors from '../../errors.js'
 import {
   normalizeContentLinkWithLocale,
   contentLinkToString,
-} from '@remkoj/optimizely-graph-client/utils'
+} from '@eshn/optimizely-graph-client/utils'
 import type {
   CmsContentAreaBaseComponent,
   BaseCmsContentAreaProps,

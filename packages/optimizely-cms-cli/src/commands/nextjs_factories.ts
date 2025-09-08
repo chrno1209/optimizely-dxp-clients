@@ -221,7 +221,7 @@ function generateFactory(factoryInfo: ComponentFactoryDefintion, factoryKey: str
     const subFactories = factoryInfo.subfactories
     const factoryContent = `// Auto generated dictionary
 // @not-modified => When this line is removed, the "force" parameter of the CLI tool is required to overwrite this file
-import { type ComponentTypeDictionary } from "@remkoj/optimizely-cms-react";
+import { type ComponentTypeDictionary } from "@eshn/optimizely-cms-react";
 ${ [...components,...subFactories].map(x => {
     let importLine = `import ${ x.variable } from "${ x.import }";`
     if (x.loaderImport && x.loaderVariable) {

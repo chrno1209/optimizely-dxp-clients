@@ -1,6 +1,6 @@
 import { getArgsConfig, getFrontendURL } from "../config.js";
 import type { CliModule } from '../types.js';
-import createAdminApi, { isApiError } from '@remkoj/optimizely-graph-client/admin'
+import createAdminApi, { isApiError } from '@eshn/optimizely-graph-client/admin'
 
 type PublishToVercelProps = { path: string, token_id: string, publish_token: string }
 

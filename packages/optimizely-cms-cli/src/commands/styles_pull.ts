@@ -1,6 +1,6 @@
 import type { CliModule } from '../types.js'
 import { parseArgs } from '../tools/parseArgs.js'
-import { type IntegrationApi, type ApiClientInstance, OptiCmsVersion } from '@remkoj/optimizely-cms-api'
+import { type IntegrationApi, type ApiClientInstance, OptiCmsVersion } from '@eshn/optimizely-cms-api'
 import chalk from 'chalk'
 import figures from 'figures'
 import fs from 'node:fs'
@@ -214,7 +214,7 @@ export async function createDisplayTemplateHelper(typeFile: TypeFilesListEntry, 
 
   // Write Style definition
   const imports: string[] = [
-    'import type { LayoutProps } from "@remkoj/optimizely-cms-react"',
+    'import type { LayoutProps } from "@eshn/optimizely-cms-react"',
     'import type { ReactNode } from "react"'
   ]
   const typeContents: string[] = []

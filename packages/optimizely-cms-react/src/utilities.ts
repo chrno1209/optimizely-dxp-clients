@@ -1,11 +1,11 @@
 import type { ComponentType } from 'react';
 import type { DocumentNode } from 'graphql';
-import type { ContentLinkWithLocale, ContentLink } from '@remkoj/optimizely-graph-client';
+import type { ContentLinkWithLocale, ContentLink } from '@eshn/optimizely-graph-client';
 import type { ContentType, BaseCmsComponent, CmsComponentWithQuery, CmsComponentWithFragment, WithGqlFragment, ContentQueryProps } from './types.js';
 import type { ComponentFactory, ComponentTypeHandle } from './factory/types.js';
 
 import { TYPE_MERGE_SYMBOL } from './factory/index.js';
-import { localeToGraphLocale } from '@remkoj/optimizely-graph-client/utils';
+import { localeToGraphLocale } from '@eshn/optimizely-graph-client/utils';
 
 //Export the Rich-Text utilities
 export * from './components/rich-text/utils.js'

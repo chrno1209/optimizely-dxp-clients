@@ -1,5 +1,5 @@
 import yargs from 'yargs'
-import { readEnvironmentVariables as getEnvConfig, type OptimizelyGraphConfig } from "@remkoj/optimizely-graph-client/config"
+import { readEnvironmentVariables as getEnvConfig, type OptimizelyGraphConfig } from "@eshn/optimizely-graph-client/config"
 import { isDemanded } from './utils/index.js'
 import chalk from 'chalk'
 import type { CliApp } from './types.js'

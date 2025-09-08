@@ -1,6 +1,6 @@
 import { getArgsConfig } from "../../config.js";
 import type { CliModule } from '../../types.js';
-import createAdminApi, { isApiError, type SourceInfo } from '@remkoj/optimizely-graph-client/admin'
+import createAdminApi, { isApiError, type SourceInfo } from '@eshn/optimizely-graph-client/admin'
 import chalk from 'chalk'
 import figures from 'figures'
 import Table from 'cli-table3'

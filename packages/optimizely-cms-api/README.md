@@ -13,7 +13,7 @@ This package works across browser and modern Node.JS environments, which provide
 ## Usage
 ```typescript
 // Import the Client
-import createClient, { ContentRoots } from '@remkoj/optimizely-cms-integration-api'
+import createClient, { ContentRoots } from '@eshn/optimizely-cms-integration-api'
 
 // Create an instance of the client
 const client = createClient({

@@ -1,4 +1,4 @@
-import { type CmsComponent } from "@remkoj/optimizely-cms-react";
+import { type CmsComponent } from "@eshn/optimizely-cms-react";
 import { CarouselBlockDataFragmentDoc, type CarouselBlockDataFragment } from "@/gql/graphql";
 
 /**

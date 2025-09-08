@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@remkoj/optimizely-cms-nextjs": "*",
-    "@remkoj/optimizely-cms-react": "*",
-    "@remkoj/optimizely-graph-client": "*",
+    "@eshn/optimizely-cms-nextjs": "*",
+    "@eshn/optimizely-cms-react": "*",
+    "@eshn/optimizely-graph-client": "*",
     "entities": "^6.0.1",
     "graphql": "^16.11.0",
     "graphql-request": "^6.1.0",
@@ -24,10 +24,10 @@
     "@graphql-codegen/cli": "^5.0.7",
     "@graphql-typed-document-node/core": "^3.2.0",
     "@next/env": "^14",
-    "@remkoj/optimizely-cms-api": "*",
-    "@remkoj/optimizely-cms-cli": "*",
-    "@remkoj/optimizely-graph-cli": "*",
-    "@remkoj/optimizely-graph-functions": "*",
+    "@eshn/optimizely-cms-api": "*",
+    "@eshn/optimizely-cms-cli": "*",
+    "@eshn/optimizely-graph-cli": "*",
+    "@eshn/optimizely-graph-functions": "*",
     "@types/node": "^22.16.0",
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
@@ -39,13 +39,13 @@
   },
   "resolutions": {
     "@graphql-codegen/visitor-plugin-common": "file:../../dependencies/graphql-codegen-visitor-plugin-common-v5.8.0-patched.tgz",
-    "@remkoj/optimizely-one-nextjs": "portal:../../packages/optimizely-one-nextjs",
-    "@remkoj/optimizely-cms-nextjs": "portal:../../packages/optimizely-cms-nextjs",
-    "@remkoj/optimizely-cms-react": "portal:../../packages/optimizely-cms-react",
-    "@remkoj/optimizely-graph-client": "portal:../../packages/optimizely-graph-client",
-    "@remkoj/optimizely-cms-api": "portal:../../packages/optimizely-cms-api",
-    "@remkoj/optimizely-cms-cli": "portal:../../packages/optimizely-cms-cli",
-    "@remkoj/optimizely-graph-cli": "portal:../../packages/optimizely-graph-cli",
-    "@remkoj/optimizely-graph-functions": "portal:../../packages/optimizely-graph-functions"
+    "@eshn/optimizely-one-nextjs": "portal:../../packages/optimizely-one-nextjs",
+    "@eshn/optimizely-cms-nextjs": "portal:../../packages/optimizely-cms-nextjs",
+    "@eshn/optimizely-cms-react": "portal:../../packages/optimizely-cms-react",
+    "@eshn/optimizely-graph-client": "portal:../../packages/optimizely-graph-client",
+    "@eshn/optimizely-cms-api": "portal:../../packages/optimizely-cms-api",
+    "@eshn/optimizely-cms-cli": "portal:../../packages/optimizely-cms-cli",
+    "@eshn/optimizely-graph-cli": "portal:../../packages/optimizely-graph-cli",
+    "@eshn/optimizely-graph-functions": "portal:../../packages/optimizely-graph-functions"
   }
 }

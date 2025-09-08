@@ -15,7 +15,7 @@ import {
   createClient,
   type OptimizelyGraphConfig,
   type IOptiGraphClient,
-} from '@remkoj/optimizely-graph-client'
+} from '@eshn/optimizely-graph-client'
 import { type GenericContext, type TransferrableContext } from './types.js'
 import {
   getFactory,

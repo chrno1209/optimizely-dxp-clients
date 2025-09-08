@@ -1,10 +1,10 @@
 'use server'
 
-import { type IOptiGraphClient } from "@remkoj/optimizely-graph-client";
-import { type ChannelDefinition, ifChannelDefinition } from "@remkoj/optimizely-graph-client/channels";
-import { normalizeContentLinkWithLocale, isContentLinkWithSetLocale } from '@remkoj/optimizely-graph-client/utils';
+import { type IOptiGraphClient } from "@eshn/optimizely-graph-client";
+import { type ChannelDefinition, ifChannelDefinition } from "@eshn/optimizely-graph-client/channels";
+import { normalizeContentLinkWithLocale, isContentLinkWithSetLocale } from '@eshn/optimizely-graph-client/utils';
 
-import { Utils } from '@remkoj/optimizely-cms-react/rsc';
+import { Utils } from '@eshn/optimizely-cms-react/rsc';
 
 import { type GetContentByPathMethod, type GetContentByPathVariables, } from './data.js';
 import { getChannelId, SystemLocales, type LookupResponse } from "./_base.js";

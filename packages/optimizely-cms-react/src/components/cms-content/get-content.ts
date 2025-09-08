@@ -1,6 +1,6 @@
 import { ASTNode, print } from 'graphql'
 import { ComponentType } from 'react';
-import { type ContentLink, type InlineContentLink, type IOptiGraphClient, isContentLink, isInlineContentLink, OptiCmsSchema } from "@remkoj/optimizely-graph-client";
+import { type ContentLink, type InlineContentLink, type IOptiGraphClient, isContentLink, isInlineContentLink, OptiCmsSchema } from "@eshn/optimizely-graph-client";
 import { CmsComponent, CmsComponentWithFragment, CmsComponentWithQuery, ProcessQueryResponse } from "../../types.js";
 import { CmsContentFragments } from "../../data/queries.js";
 import { validatesFragment, contentLinkToRequestVariables, isCmsComponentWithFragment, isCmsComponentWithDataQuery } from "../../utilities.js";

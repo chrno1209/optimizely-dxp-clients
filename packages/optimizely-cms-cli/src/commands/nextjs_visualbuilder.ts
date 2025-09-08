@@ -1,4 +1,4 @@
-import { type IntegrationApi } from '@remkoj/optimizely-cms-api'
+import { type IntegrationApi } from '@eshn/optimizely-cms-api'
 import path from 'node:path'
 import fs from 'node:fs'
 import chalk from 'chalk'
@@ -59,14 +59,14 @@ function createSpecificNode(template: IntegrationApi.DisplayTemplate, templatePa
 
   const baseType = template.nodeType ?? template.baseType ?? 'unknown';
   const displayTemplateName = getDisplayTemplateInfo(template, templatePath);
-  const imports: string[] = ['import { extractSettings, type CmsLayoutComponent } from "@remkoj/optimizely-cms-react/rsc";'];
+  const imports: string[] = ['import { extractSettings, type CmsLayoutComponent } from "@eshn/optimizely-cms-react/rsc";'];
   const componentProps = [`className="vb:${baseType} vb:${baseType}:${template.key}"`]
   const componentArgs = ['layoutProps', 'children']
   let componentType = 'div'
   if (displayTemplateName)
     imports.push(`import { ${displayTemplateName} } from "../displayTemplates";`)
   if (baseType.toLowerCase() == 'section') {
-    imports.push('import { CmsEditable } from "@remkoj/optimizely-cms-react/rsc";')
+    imports.push('import { CmsEditable } from "@eshn/optimizely-cms-react/rsc";')
     componentType = 'CmsEditable'
     componentProps.push('{ ...editProps }')
     componentArgs.push('editProps')
@@ -97,7 +97,7 @@ function createGenericNode(basePath: string, force: boolean, debug: boolean) {
   } else if (debug)
     process.stdout.write(chalk.gray(`${figures.arrowRight} Creating generic node component\n`))
 
-  const nodeContent = `import { CmsEditable, type CmsLayoutComponent } from '@remkoj/optimizely-cms-react/rsc'
+  const nodeContent = `import { CmsEditable, type CmsLayoutComponent } from '@eshn/optimizely-cms-react/rsc'
 
 export const VisualBuilderNode : CmsLayoutComponent = ({ editProps, layoutProps, children }) =>
 {

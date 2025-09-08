@@ -1,6 +1,6 @@
 import type { CliModule } from '../types.js'
 import { parseArgs } from '../tools/parseArgs.js'
-import { createClient, IntegrationApi } from '@remkoj/optimizely-cms-api'
+import { createClient, IntegrationApi } from '@eshn/optimizely-cms-api'
 import path from 'node:path'
 import fs from 'node:fs'
 import { glob } from 'glob'

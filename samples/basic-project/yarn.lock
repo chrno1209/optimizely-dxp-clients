@@ -1499,15 +1499,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remkoj/optimizely-cms-api@portal:../../packages/optimizely-cms-api::locator=basic-project%40workspace%3A.":
+"@eshn/optimizely-cms-api@portal:../../packages/optimizely-cms-api::locator=basic-project%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "@remkoj/optimizely-cms-api@portal:../../packages/optimizely-cms-api::locator=basic-project%40workspace%3A."
+  resolution: "@eshn/optimizely-cms-api@portal:../../packages/optimizely-cms-api::locator=basic-project%40workspace%3A."
   languageName: node
   linkType: soft
 
-"@remkoj/optimizely-cms-cli@portal:../../packages/optimizely-cms-cli::locator=basic-project%40workspace%3A.":
+"@eshn/optimizely-cms-cli@portal:../../packages/optimizely-cms-cli::locator=basic-project%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "@remkoj/optimizely-cms-cli@portal:../../packages/optimizely-cms-cli::locator=basic-project%40workspace%3A."
+  resolution: "@eshn/optimizely-cms-cli@portal:../../packages/optimizely-cms-cli::locator=basic-project%40workspace%3A."
   dependencies:
     "@inquirer/prompts": "npm:^7.6.0"
     chalk: "npm:^5.4.1"
@@ -1518,23 +1518,23 @@ __metadata:
     glob: "npm:^11.0.3"
     yargs: "npm:^17.7.2"
   peerDependencies:
-    "@remkoj/optimizely-cms-api": ^5.1.2
+    "@eshn/optimizely-cms-api": ^5.1.2
     "@types/node": "*"
   bin:
     opti-cms: ./dist/index.js
   languageName: node
   linkType: soft
 
-"@remkoj/optimizely-cms-nextjs@portal:../../packages/optimizely-cms-nextjs::locator=basic-project%40workspace%3A.":
+"@eshn/optimizely-cms-nextjs@portal:../../packages/optimizely-cms-nextjs::locator=basic-project%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "@remkoj/optimizely-cms-nextjs@portal:../../packages/optimizely-cms-nextjs::locator=basic-project%40workspace%3A."
+  resolution: "@eshn/optimizely-cms-nextjs@portal:../../packages/optimizely-cms-nextjs::locator=basic-project%40workspace%3A."
   dependencies:
     "@formatjs/intl-localematcher": "npm:^0.6.1"
     deepmerge: "npm:^4.3.1"
     negotiator: "npm:^1.0.0"
   peerDependencies:
-    "@remkoj/optimizely-cms-react": ^5.1.2
-    "@remkoj/optimizely-graph-client": ^5.1.2
+    "@eshn/optimizely-cms-react": ^5.1.2
+    "@eshn/optimizely-graph-client": ^5.1.2
     graphql: ^16
     graphql-request: ^6
     next: ^14
@@ -1542,14 +1542,14 @@ __metadata:
   languageName: node
   linkType: soft
 
-"@remkoj/optimizely-cms-react@portal:../../packages/optimizely-cms-react::locator=basic-project%40workspace%3A.":
+"@eshn/optimizely-cms-react@portal:../../packages/optimizely-cms-react::locator=basic-project%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "@remkoj/optimizely-cms-react@portal:../../packages/optimizely-cms-react::locator=basic-project%40workspace%3A."
+  resolution: "@eshn/optimizely-cms-react@portal:../../packages/optimizely-cms-react::locator=basic-project%40workspace%3A."
   dependencies:
     "@graphql-typed-document-node/core": "npm:^3.2.0"
     crypto-js: "npm:^4.2.0"
   peerDependencies:
-    "@remkoj/optimizely-graph-client": ^5
+    "@eshn/optimizely-graph-client": ^5
     entities: ^6
     graphql: ^16
     graphql-request: ^6
@@ -1558,9 +1558,9 @@ __metadata:
   languageName: node
   linkType: soft
 
-"@remkoj/optimizely-graph-cli@portal:../../packages/optimizely-graph-cli::locator=basic-project%40workspace%3A.":
+"@eshn/optimizely-graph-cli@portal:../../packages/optimizely-graph-cli::locator=basic-project%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "@remkoj/optimizely-graph-cli@portal:../../packages/optimizely-graph-cli::locator=basic-project%40workspace%3A."
+  resolution: "@eshn/optimizely-graph-cli@portal:../../packages/optimizely-graph-cli::locator=basic-project%40workspace%3A."
   dependencies:
     chalk: "npm:^5.4.1"
     cli-table3: "npm:^0.6.5"
@@ -1571,15 +1571,15 @@ __metadata:
     glob: "npm:^11.0.3"
     yargs: "npm:^17.7.2"
   peerDependencies:
-    "@remkoj/optimizely-graph-client": ^5.1.2
+    "@eshn/optimizely-graph-client": ^5.1.2
   bin:
     opti-graph: bin/index.js
   languageName: node
   linkType: soft
 
-"@remkoj/optimizely-graph-client@portal:../../packages/optimizely-graph-client::locator=basic-project%40workspace%3A.":
+"@eshn/optimizely-graph-client@portal:../../packages/optimizely-graph-client::locator=basic-project%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "@remkoj/optimizely-graph-client@portal:../../packages/optimizely-graph-client::locator=basic-project%40workspace%3A."
+  resolution: "@eshn/optimizely-graph-client@portal:../../packages/optimizely-graph-client::locator=basic-project%40workspace%3A."
   dependencies:
     crypto-js: "npm:^4.2.0"
     uuid: "npm:^11.1.0"
@@ -1588,9 +1588,9 @@ __metadata:
   languageName: node
   linkType: soft
 
-"@remkoj/optimizely-graph-functions@portal:../../packages/optimizely-graph-functions::locator=basic-project%40workspace%3A.":
+"@eshn/optimizely-graph-functions@portal:../../packages/optimizely-graph-functions::locator=basic-project%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "@remkoj/optimizely-graph-functions@portal:../../packages/optimizely-graph-functions::locator=basic-project%40workspace%3A."
+  resolution: "@eshn/optimizely-graph-functions@portal:../../packages/optimizely-graph-functions::locator=basic-project%40workspace%3A."
   dependencies:
     "@graphql-codegen/add": "npm:^5.0.3"
     "@graphql-codegen/client-preset": "npm:^4.8.3"
@@ -1602,7 +1602,7 @@ __metadata:
     tslib: "npm:^2.8.1"
   peerDependencies:
     "@graphql-typed-document-node/core": ^3
-    "@remkoj/optimizely-graph-client": ^5.1.2
+    "@eshn/optimizely-graph-client": ^5.1.2
     graphql: ^16
     graphql-request: ^6
     graphql-tag: ^2
@@ -2523,13 +2523,13 @@ __metadata:
     "@graphql-codegen/cli": "npm:^5.0.7"
     "@graphql-typed-document-node/core": "npm:^3.2.0"
     "@next/env": "npm:^14"
-    "@remkoj/optimizely-cms-api": "npm:*"
-    "@remkoj/optimizely-cms-cli": "npm:*"
-    "@remkoj/optimizely-cms-nextjs": "npm:*"
-    "@remkoj/optimizely-cms-react": "npm:*"
-    "@remkoj/optimizely-graph-cli": "npm:*"
-    "@remkoj/optimizely-graph-client": "npm:*"
-    "@remkoj/optimizely-graph-functions": "npm:*"
+    "@eshn/optimizely-cms-api": "npm:*"
+    "@eshn/optimizely-cms-cli": "npm:*"
+    "@eshn/optimizely-cms-nextjs": "npm:*"
+    "@eshn/optimizely-cms-react": "npm:*"
+    "@eshn/optimizely-graph-cli": "npm:*"
+    "@eshn/optimizely-graph-client": "npm:*"
+    "@eshn/optimizely-graph-functions": "npm:*"
     "@types/node": "npm:^22.16.0"
     "@types/react": "npm:^18.3.23"
     "@types/react-dom": "npm:^18.3.7"

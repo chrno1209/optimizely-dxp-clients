@@ -1,5 +1,5 @@
 import { isContentType } from '../../utilities.js'
-import { isContentLink, ContentLinkWithLocale, isInlineContentLink, InlineContentLinkWithLocale } from '@remkoj/optimizely-graph-client'
+import { isContentLink, ContentLinkWithLocale, isInlineContentLink, InlineContentLinkWithLocale } from '@eshn/optimizely-graph-client'
 import type { CompositionNode, LeafPropsFactory, CompositionComponentNode, NodePropsFactory, CompositionStructureNode } from './types.js'
 
 /**

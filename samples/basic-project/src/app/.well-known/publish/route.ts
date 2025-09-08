@@ -1,4 +1,4 @@
-import createPublishApi from '@remkoj/optimizely-cms-nextjs/publish'
+import createPublishApi from '@eshn/optimizely-cms-nextjs/publish'
 
 const handler = createPublishApi({
   optimizePublish: true, // When set to enabled, this will try to only publish the content item published by the CMS

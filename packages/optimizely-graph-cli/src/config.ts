@@ -1,4 +1,4 @@
-import { readEnvironmentVariables as getEnvConfig, validateConfig, applyConfigDefaults, type OptimizelyGraphConfigInternal, type OptimizelyGraphConfig } from "@remkoj/optimizely-graph-client/config"
+import { readEnvironmentVariables as getEnvConfig, validateConfig, applyConfigDefaults, type OptimizelyGraphConfigInternal, type OptimizelyGraphConfig } from "@eshn/optimizely-graph-client/config"
 import type { CliArgs } from './types.js'
 
 export function getArgsConfig(args: CliArgs): OptimizelyGraphConfigInternal {

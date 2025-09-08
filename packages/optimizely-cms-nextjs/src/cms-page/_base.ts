@@ -1,7 +1,7 @@
-import { OptiCmsSchema, type IOptiGraphClient } from '@remkoj/optimizely-graph-client/client'
-import { type ChannelDefinition } from "@remkoj/optimizely-graph-client/channels"
-import { type Route } from "@remkoj/optimizely-graph-client/router"
-import { type ContentLinkWithLocale } from "@remkoj/optimizely-graph-client"
+import { OptiCmsSchema, type IOptiGraphClient } from '@eshn/optimizely-graph-client/client'
+import { type ChannelDefinition } from "@eshn/optimizely-graph-client/channels"
+import { type Route } from "@eshn/optimizely-graph-client/router"
+import { type ContentLinkWithLocale } from "@eshn/optimizely-graph-client"
 
 export enum SystemLocales {
   All = 'ALL',

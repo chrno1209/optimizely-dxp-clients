@@ -1,7 +1,7 @@
 # Optimizely GraphQL Codegen Plugin
 GraphQL Codegen plugin and preset which generate both the GraphQL type definitions and a few convenienece methods for useage with [Optimizely Graph Client](../optimizely-graph-client/README.md).
 
-[Release notes](https://github.com/remkoj/optimizely-dxp-clients/releases)
+[Release notes](https://github.com/chrno1209/optimizely-dxp-clients/releases)
 
 > [!WARNING]
 > The GraphQL Codegen preset requires a patch to enable it to work with recursive queries. Make sure to run this command after every update to ensure you're using the latest patches: `yarn opti-graph patches:apply`. Adjust when used in a mono-repo to patch the correct package.json, for example: `yarn workspace frontend opti-graph patches:apply -p ../../`
@@ -10,12 +10,12 @@ GraphQL Codegen plugin and preset which generate both the GraphQL type definitio
 To install using Yarn, use the following command:
 
 ```bash
-yarn add --dev @remkoj/optimizely-graph-functions
+yarn add --dev @eshn/optimizely-graph-functions
 ```
 
 To add support for automatic applying of patches and apply them.
 ```bash
-yarn add --dev @remkoj/optimizely-graph-cli
+yarn add --dev @eshn/optimizely-graph-cli
 yarn opti-graph patches:apply
 ```
 
@@ -24,8 +24,8 @@ Create a codegen.ts within your application root folder (e.g. apps/frontend/code
 
 ```typescript
 import type { CodegenConfig  } from '@graphql-codegen/cli'
-import getSchemaInfo from '@remkoj/optimizely-graph-client/codegen'
-import OptimizelyGraphPreset, {type PresetOptions as OptimizelyGraphPresetOptions}  from '@remkoj/optimizely-graph-functions/preset'
+import getSchemaInfo from '@eshn/optimizely-graph-client/codegen'
+import OptimizelyGraphPreset, {type PresetOptions as OptimizelyGraphPresetOptions}  from '@eshn/optimizely-graph-functions/preset'
 
 // This example assumes the configuration can be read from the environment variables, make sure .env files (if you use them) are processed prior to invoking getSchemaInfo()
 
@@ -49,7 +49,7 @@ const config: CodegenConfig = {
                 //
                 // When setting recursion to `true` it requires additional
                 // steps to work
-                recursion: false,
+                recursion: true,
 
                 // The GQL tag to be used to identify inline GraphQL queries
                 gqlTagName: 'gql',
@@ -113,7 +113,7 @@ Only the methods specified by the `functions` preset configuration are available
 
 ```typescript
 import { getContentById, getContentByPath } from "@/gql/functions"
-import createClient from "@remkoj/optimizely-graph-client"
+import createClient from "@eshn/optimizely-graph-client"
 
 const client = createClient({
     single_key: "your single key here"
@@ -128,7 +128,7 @@ All GraphQL operations (e.g. Queries, Mutations, ...) defined within the documen
 
 ```typescript
 import { getSdk } from "@/gql/client"
-import createClient from "@remkoj/optimizely-graph-client"
+import createClient from "@eshn/optimizely-graph-client"
 
 const client = getSdk(createClient({
     single_key: "your single key here"
