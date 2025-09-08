@@ -4,7 +4,7 @@ on:
   workflow_dispatch: # manual trigger
   push:
     branches:
-      - main # or 'master' depending on your default branch
+      - release_v5 # or 'master' depending on your default branch
 
 jobs:
   release:
